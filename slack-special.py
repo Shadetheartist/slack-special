@@ -1,5 +1,5 @@
-on = ":fastparrot:"
-off = ":meow_party:"
+on = ":tomato:"
+off = ":bowl_with_spoon:"
 
 a = [
     0, 1, 1, 0,
@@ -209,6 +209,86 @@ z = [
     1, 1, 1, 1
 ]
 
+one = [
+    1, 1, 0,
+    0, 1, 0,
+    0, 1, 0,
+    0, 1, 0,
+    1, 1, 1
+]
+
+two = [
+    1, 1, 1, 1,
+    0, 0, 0, 1,
+    1, 1, 1, 1,
+    1, 0, 0, 0,
+    1, 1, 1, 1
+]
+
+three = [
+    1, 1, 0,
+    0, 0, 1,
+    1, 1, 0,
+    0, 0, 1,
+    1, 1, 0
+]
+
+four = [
+    0, 1, 1, 0,
+    1, 0, 1, 0,
+    1, 1, 1, 1,
+    0, 0, 1, 0,
+    0, 0, 1, 0
+]
+
+five = [
+    1, 1, 1, 1,
+    1, 0, 0, 0,
+    1, 1, 1, 0,
+    0, 0, 0, 1,
+    1, 1, 1, 0
+]
+
+six = [
+    0, 1, 1, 1,
+    1, 0, 0, 0,
+    1, 1, 1, 0,
+    1, 0, 0, 1,
+    0, 1, 1, 0
+]
+
+seven = [
+    1, 1, 1, 1,
+    0, 0, 0, 1,
+    0, 0, 1, 0,
+    0, 1, 0, 0,
+    0, 1, 0, 0
+]
+
+eight = [
+    0, 1, 1, 0,
+    1, 0, 0, 1,
+    0, 1, 1, 0,
+    1, 0, 0, 1,
+    0, 1, 1, 0
+]
+
+nine = [
+    0, 1, 1, 0,
+    1, 0, 0, 1,
+    0, 1, 1, 1,
+    0, 0, 0, 1,
+    1, 1, 1, 0
+]
+
+zero = [
+    0, 1, 1, 0,
+    1, 0, 0, 1,
+    1, 0, 0, 1,
+    1, 0, 0, 1,
+    0, 1, 1, 0
+]
+
 space = [
     0, 0, 0, 0, 
     0, 0, 0, 0, 
@@ -217,12 +297,20 @@ space = [
     0, 0, 0, 0, 
 ]
 
+hyphen = [
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    1, 1, 1, 1,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+]
+
 letter_spacing = 1
 
 glyph_height = 5
 
-chars = 'abcdefghijklmnopqrstuvwxyz '
-glyphs = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,space]
+chars = 'abcdefghijklmnopqrstuvwxyz 1234567890-'
+glyphs = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,space,one,two,three,four,five,six,seven,eight,nine,zero, hyphen]
 
 
 def get_glyph_for_char(char):
@@ -270,4 +358,3 @@ for c in input_text:
 output = '\n'.join(lines)
 
 print(output)
-input()
